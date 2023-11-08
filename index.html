@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</html>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill this survey form</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Name : <input id="name" type="text" placeholder="Your name" class="inline" required>
+    </label>
+   <label id="email-label" for="email">Email :
+    <input id="email" type="email" placeholder="Your email" class="inline" required>
+    </label>
+    <label id="number-label" for="number">Number :
+    <input id="number" type="number" min="0" max="10" placeholder="Your no." class="inline" required>
+    </label>
+       </fieldset>
+    <fieldset>
+      <label>Brand rank :</label>
+      <select id="dropdown">
+      <option value="">(select one)</option>
+      <option value="1">first</option>
+      <option value="2">second</option>
+    </select>
+    </fieldset>
+    <fieldset>
+      <label> Quality of our products :
+<label for="Good"><input id="Good" type="radio" name="quality" class="inline" value="1"> Good</label>
+<label for="Very-Good"><input id="Very-Good" type="radio" name="quality" class="inline" value="2"> Very good</label>
+<label for="Bad"><input id="Bad" type="radio" name="quality" class="inline" value="3"> Bad</label>
+<label for="Very-Bad"><input id="Very-Bad" type="radio" name="quality" class="inline" value="4"> Very bad</label>
+</label>
+     </fieldset>
+     <fieldset>
+       <label>Product that you find most promising : 
+         <label for="best"><input id="best" type="checkbox" class="inline" value="1"> Abc</label>
+          <label for="best"><input id="best" type="checkbox" class="inline" value="2"> Def</label>
+           <label for="best"><input id="best" type="checkbox" class="inline" value="3"> Ghi</label>
+       </label>
+     </fieldset>
+     <fieldset>
+       <label for="suggestions">Any suggestions :
+         <textarea id="suggestions" name="suggestions" rows="4" cols="45">Write any suggestions...</textarea>
+      </label>
+     </fieldset>
+     <input id="submit" type="submit">
+    </form>
+</body>
